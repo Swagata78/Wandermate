@@ -1,0 +1,253 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0b132b;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #4f7cff;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex: 1;
+  min-height: 80vh;
+  margin: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Left Panel (Form) */
+.form-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 30px;
+}
+
+.form-panel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b132b;
+}
+
+/* Social Buttons */
+.social-login {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-login button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-login .google { background: #fff; border: 1px solid #ddd; }
+.social-login .facebook { background: #1877f2; color: white; }
+.social-login .twitter { background: #000; color: white; }
+
+.social-login button img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-login button:hover {
+  transform: scale(1.03);
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.divider::before {
+  content: "";
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  left: 0; right: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+/* Form Fields */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form .btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4f7cff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form .btn:hover {
+  background: #365fda;
+}
+
+/* Register link */
+.register-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.register-text a {
+  color: #4f7cff;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Right Panel (Background) */
+.right-panel {
+  flex: 1;
+  background: url("../image/registor.png") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.right-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.right-panel p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+/* Footer */
+footer {
+  background: #0b132b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+footer .footer-links {
+  margin-top: 5px;
+}
+
+footer .footer-links a {
+  color: #7dd3fc;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .form-panel, .right-panel {
+    flex: none;
+    width: 100%;
+  }
+  .right-panel h2 { font-size: 1.8rem; }
+}
+/* Remove underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* Optional: Add hover effect */
+a:hover {
+  color: #3b82f6; /* example blue */
+  text-decoration: underline; /* or keep none */
+}
+
+/* If you want only navbar links */
+.nav-links a {
+  text-decoration: none;
+  color: inherit; /* keeps them the same color as text */
+}
+
+.nav-links a:hover {
+  color: #3b82f6; /* highlight on hover */
+}

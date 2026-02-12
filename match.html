@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Travelers | WanderMate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/match.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">WanderMate</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Perfect Travel Companion</h1>
+      <p>Connect with like-minded travelers going to the same destinations</p>
+      <div class="search-container">
+        <div class="search-bar">
+          <input type="text" placeholder="Search destinations or interests...">
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container fade-in">
+    <section class="match-section">
+      <div class="section-header">
+        <h2 class="section-title">Available Travel Buddies</h2>
+        <button id="request-btn" class="action-btn">Request Selected</button>
+      </div>
+
+      <!-- Buddy Cards Container -->
+      <div class="cards-container">
+        <!-- Example Buddy Card -->
+        <div class="buddy-card fade-in" style="animation-delay: 0.2s">
+          
+          <div class="buddy-info">
+            <h3 class="buddy-name">Sarah Johnson</h3>
+            <div class="buddy-location">
+              <span>📍 Bali, Indonesia</span>
+            </div>
+            <div class="buddy-interests">
+              <span class="interest-tag">Adventure</span>
+              <span class="interest-tag">Beaches</span>
+              <span class="interest-tag">Photography</span>
+            </div>
+            <div class="card-footer">
+              <input type="checkbox" class="select-checkbox">
+              <button class="connect-btn">Connect</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more buddy cards similarly -->
+      </div>
+    </section>
+  </div>
+
+  <script src="js/match.js"></script>
+</body>
+</html>

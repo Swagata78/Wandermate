@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner - WanderMate</title>
+  <link rel="stylesheet" href="./css/planner.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 WanderMate</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Plan Your Next Adventure</h1>
+    <p>Create, track, and organize your trips all in one place.</p>
+  </section>
+
+  <!-- Planner Section -->
+  <section class="planner-section">
+    <!-- Add Trip Form -->
+    <div class="trip-form">
+      <h2>Add New Trip</h2>
+      <form id="tripForm">
+        <input type="text" id="destination" placeholder="Destination (City, Country)" required>
+        <input type="date" id="startDate" required>
+        <input type="date" id="endDate" required>
+        <input type="number" id="budget" placeholder="Budget (USD)" required>
+        <input type="text" id="travelType" placeholder="Travel Type (Optional)" >
+        <input type="text" id="interests" placeholder="Interests (Adventure, Beach, Culture, etc.)">
+        <button type="submit" class="btn">Add Trip</button>
+      </form>
+    </div>
+
+    <!-- Trip Cards -->
+    <div class="trip-cards">
+      <h2>My Trips</h2>
+      <input type="text" id="searchTrip" placeholder="Search trips by destination...">
+      <div class="cards-container" id="cardsContainer">
+        <!-- Trip cards will appear here dynamically by planner.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 WanderMate. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./js/planner.js"></script>
+</body>
+</html>

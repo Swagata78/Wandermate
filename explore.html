@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderMate - Explore Countries</title>
+  <link rel="stylesheet" href="./css/explore.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 WanderMate</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Discover Amazing Places</h1>
+      <p>Plan your next adventure and connect with travel buddies worldwide.</p>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <input type="text" id="countrySearch" placeholder="Search for a country...">
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <button class="filter-btn" data-continent="all">All</button>
+    <button class="filter-btn" data-continent="asia">Asia</button>
+    <button class="filter-btn" data-continent="europe">Europe</button>
+    <button class="filter-btn" data-continent="oceania">Oceania</button>
+    <button class="filter-btn" data-continent="america">America</button>
+  </section>
+
+  <!-- Explore Countries Section -->
+  <section class="explore-countries" id="explore">
+    <h2>Explore Countries</h2>
+    <div class="countries-container">
+
+      <!-- Japan (Asia) -->
+      <div class="country-card" data-continent="asia">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/tokyo.png" alt="Japan">
+            <h3>Japan</h3>
+          </div>
+          <div class="card-back">
+            <p>Famous for cherry blossoms, temples, and technology.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- France (Europe) -->
+      <div class="country-card" data-continent="europe">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/paris.png" alt="France">
+            <h3>France</h3>
+          </div>
+          <div class="card-back">
+            <p>Known for the Eiffel Tower, exquisite cuisine, and culture.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Australia (Oceania) -->
+      <div class="country-card" data-continent="oceania">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/australia.png" alt="Australia">
+            <h3>Australia</h3>
+          </div>
+          <div class="card-back">
+            <p>Home to stunning beaches, the Outback, and unique wildlife.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Italy (Europe) -->
+      <div class="country-card" data-continent="europe">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/italy.png" alt="Italy">
+            <h3>Italy</h3>
+          </div>
+          <div class="card-back">
+            <p>Famous for historical architecture, art, and delicious cuisine.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brazil (America) -->
+      <div class="country-card" data-continent="america">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/brazil.png" alt="Brazil">
+            <h3>Brazil</h3>
+          </div>
+          <div class="card-back">
+            <p>Known for the Amazon rainforest, beaches, and Carnival festival.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- China (Asia) -->
+      <div class="country-card" data-continent="asia">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/china.png" alt="China">
+            <h3>China</h3>
+          </div>
+          <div class="card-back">
+            <p>Famous for the Great Wall, rich history, and modern cities.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Korea (Asia) -->
+      <div class="country-card" data-continent="asia">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/sole.png" alt="Korea">
+            <h3>Korea</h3>
+          </div>
+          <div class="card-back">
+            <p>Known for K-pop, traditional palaces, and scenic mountains.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spain (Europe) -->
+      <div class="country-card" data-continent="europe">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/spain.png" alt="Spain">
+            <h3>Spain</h3>
+          </div>
+          <div class="card-back">
+            <p>Famous for flamenco, tapas, festivals, and sunny beaches.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- India (Asia) -->
+      <div class="country-card" data-continent="asia">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/india.png" alt="India">
+            <h3>India</h3>
+          </div>
+          <div class="card-back">
+            <p>Known for diverse cultures, cuisine, and historical monuments.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indonesia (Asia) -->
+      <div class="country-card" data-continent="asia">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../image/indo.png" alt="Indonesia">
+            <h3>Indonesia</h3>
+          </div>
+          <div class="card-back">
+            <p>Famous for tropical islands, beaches, and vibrant traditions.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 WanderMate. All rights reserved.</p>
+  </footer>
+
+  <!-- JS File -->
+  <script src="./js/explore.js"></script>
+</body>
+</html>

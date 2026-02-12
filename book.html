@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | WanderMate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">WanderMate</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="match.html">Match</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+    </ul>
+    
+  </nav>
+
+  <!-- Booking Container -->
+  <div class="booking-container">
+    <div class="booking-card">
+      <h2 class="section-title">Your Trip Details</h2>
+      
+      <div class="trip-summary">
+        <img src="../image/random.png" alt="Beautiful beach in Bali with palm trees" class="trip-image">
+        
+        <div class="trip-details">
+          <h3>Bali, Indonesia</h3>
+          <p><strong>Dates:</strong> June 15 - June 25, 2024</p>
+          <p><strong>Travelers:</strong> 2 Adults</p>
+          
+          <div class="trip-highlight">
+            <span>Beaches</span>
+            <span>Adventure</span>
+            <span>Luxury</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="booking-options">
+        <h3 class="section-title">Customize Your Booking</h3>
+        
+        <div class="option-group">
+          <div class="option-title">
+            <span>Add-ons</span>
+            <span class="option-price">Prices vary</span>
+          </div>
+          
+          <div class="option-item">
+            <label class="option-label">
+              <input type="checkbox" class="checkbox" value="Insurance">
+              Travel Insurance
+            </label>
+            <span class="option-price">$50</span>
+          </div>
+          
+          <div class="option-item">
+            <label class="option-label">
+              <input type="checkbox" class="checkbox" value="Extra Luggage">
+              Extra Luggage
+            </label>
+            <span class="option-price">$30</span>
+          </div>
+          
+          <div class="option-item">
+            <label class="option-label">
+              <input type="checkbox" class="checkbox" value="Guided Tour">
+              Guided Tour Package
+            </label>
+            <span class="option-price">$100</span>
+          </div>
+        </div>
+        
+        <div class="option-group">
+          <div class="option-title">
+            <span>Additional Services</span>
+            <span class="option-price">Prices vary</span>
+          </div>
+          
+          <div class="option-item">
+            <label class="option-label">
+              <input type="checkbox" class="checkbox" value="Hotel Booking">
+              Hotel Booking
+            </label>
+            <span class="option-price">$200</span>
+          </div>
+          
+          <div class="option-item">
+            <label class="option-label">
+              <input type="checkbox" class="checkbox" value="Flight Ticket">
+              Flight Ticket
+            </label>
+            <span class="option-price">$500</span>
+          </div>
+          
+          <div class="option-item">
+            <label class="option-label">
+              <input type="checkbox" class="checkbox" value="Cruise Ticket">
+              Cruise Ticket
+            </label>
+            <span class="option-price">$700</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="total-section">
+        <div class="total-row">
+          <span>Base Price:</span>
+          <span>$2000</span>
+        </div>
+        <div class="total-row">
+          <span>Add-ons:</span>
+          <span id="addonsTotal">$0</span>
+        </div>
+        <div class="total-row">
+          <span>Additional Services:</span>
+          <span id="servicesTotal">$0</span>
+        </div>
+        <div class="total-row" style="margin-top: 1rem;">
+          <span><strong>Total Amount:</strong></span>
+          <span class="total-amount" id="totalAmount">$2000</span>
+        </div>
+      </div>
+      
+      <button class="book-now-btn" id="bookNow">Book Now</button>
+    </div>
+  </div>
+
+  <script src="js/book.js"></script>
+
+</body>
+</html>

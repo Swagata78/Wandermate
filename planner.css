@@ -1,0 +1,211 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #333;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+/* Navbar */
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:#0b132b;
+  color:white;
+}
+
+.navbar .logo {
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+.navbar .nav-links {
+  list-style:none;
+  display:flex;
+  gap:1.5rem;
+}
+
+.navbar .nav-links a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color:#4f7cff;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://source.unsplash.com/1600x400/?travel,planning") center/cover no-repeat;
+  padding:60px 20px;
+  text-align:center;
+  color:white;
+  position:relative;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+  position:relative;
+  font-size:2.8rem;
+  margin-bottom:10px;
+}
+
+.hero p {
+  position:relative;
+  font-size:1.2rem;
+}
+
+/* Planner Section */
+.planner-section {
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  padding:40px 20px;
+}
+
+/* Trip Form */
+.trip-form {
+  flex:1;
+  min-width:300px;
+  background:white;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.trip-form h2 {
+  margin-bottom:15px;
+}
+
+.trip-form input, .trip-form select, .trip-form button {
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:1rem;
+}
+
+.trip-form button {
+  background:#4f7cff;
+  color:white;
+  border:none;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.trip-form button:hover {
+  background:#365fda;
+}
+
+/* Trip Cards */
+.trip-cards {
+  flex:2;
+  min-width:300px;
+}
+
+.trip-cards h2 {
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.trip-cards #searchTrip {
+  width:100%;
+  padding:10px;
+  margin-bottom:15px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+.cards-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:white;
+  border-radius:12px;
+  padding:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  position:relative;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin-bottom:8px;
+}
+
+.card p {
+  font-size:0.9rem;
+  margin-bottom:5px;
+}
+
+.card button {
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:red;
+  border:none;
+  color:white;
+  padding:4px 8px;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:0.8rem;
+}
+
+.card button:hover {
+  background:#b30000;
+}
+
+/* Footer */
+footer {
+  background:#0b132b;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:auto;
+}
+
+footer .footer-links {
+  margin-top:5px;
+}
+
+footer .footer-links a {
+  color:#7dd3fc;
+  margin:0 8px;
+  text-decoration:none;
+}
+
+footer .footer-links a:hover {
+  text-decoration:underline;
+}
+
+/* Responsive */
+@media screen and (max-width:900px){
+  .planner-section {
+    flex-direction:column;
+  }
+}
